@@ -10,6 +10,8 @@ Folder: 1_Individual_species
 II. Codes for the multi-species DEB parameter estimation realised
 -----------------------------------------------------------------------------
 Folder: 2_Multi_species
+
+
 Divided into 5 folders, both 1st and 2nd folders (1_predict_5species and 2_mydata_5species) need to be added in the path of MATLAB to call them in each specific estimation. Warning: no other files with the same name should be in the different folders, or it will be erase the ones in these folders.
 
 1. Predict
