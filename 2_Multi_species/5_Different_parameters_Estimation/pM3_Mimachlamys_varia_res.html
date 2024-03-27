@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <TITLE>Mimachlamys_varia</TITLE>
+  <style>
+    div.prd {
+      width: 50%;
+      float: left;
+    }
+
+    div.par {
+      width: 50%;
+      float: right;
+    }
+
+    p.clear {
+      clear: both;
+    }
+
+    .head {
+      background-color: #FFE7C6
+    }
+
+    .psd {
+      color: blue
+    }
+
+    #prd {
+      border-style: solid hidden solid hidden;
+    }
+
+    #par {
+      border-style: solid hidden solid hidden;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+  </style>
+</HEAD>
+
+<BODY>
+
+  <div class="prd">
+  <h1>Mimachlamys varia</h1>
+  </div>
+
+  <div class="par">
+  <h4>COMPLETE = 3.0; MRE =    0.399; SMAE =    0.361; SMSE =    0.164 </h4>
+  </div>
+
+  <p class="clear"></p>
+
+  <div class="prd">
+  <h2>Data & predictions</h2>
+  <TABLE id="prd">
+    <TR  class="head"><TH>data</TH> <TH>prd</TH> <TH>RE</TH>  <TH>symbol</TH> <TH>units</TH> <TH>description</TH> </TR>
+    <TR><TD>  2</TD> <TD>1.968</TD> <TD>0.01612</TD> <TD>ab</TD> <TD>d</TD> <TD>age at birth</TD></TR>
+    <TR><TD> 18</TD> <TD>40.23</TD> <TD>1.235</TD> <TD>aj</TD> <TD>d</TD> <TD>time since fertilisation at metam</TD></TR>
+    <TR><TD>270</TD> <TD>206.9</TD> <TD>0.2337</TD> <TD>tp</TD> <TD>d</TD> <TD>time since birth at puberty</TD></TR>
+    <TR><TD>2555</TD> <TD>2828</TD> <TD>0.107</TD> <TD>am</TD> <TD>d</TD> <TD>life span</TD></TR>
+    <TR><TD>0.0105</TD> <TD>0.01768</TD> <TD>0.6842</TD> <TD>Lb</TD> <TD>cm</TD> <TD>shell length at birth</TD></TR>
+    <TR><TD>0.0215</TD> <TD>0.2824</TD> <TD>12.14</TD> <TD>Lj</TD> <TD>cm</TD> <TD>metamorphosis shell length</TD></TR>
+    <TR><TD>1.5</TD> <TD>1.695</TD> <TD>0.1297</TD> <TD>Lp</TD> <TD>cm</TD> <TD>shell height at puberty</TD></TR>
+    <TR><TD>  7</TD> <TD>5.606</TD> <TD>0.1991</TD> <TD>Li</TD> <TD>cm</TD> <TD>infinite shell height</TD></TR>
+    <TR><TD>2.192e+04</TD> <TD>3.228e+04</TD> <TD>0.4726</TD> <TD>R_L</TD> <TD>#/d</TD> <TD>reprod rate at a large size</TD></TR>
+    <TR><TD>0.003</TD> <TD>0.003974</TD> <TD>0.3248</TD> <TD>E_0</TD> <TD>J</TD> <TD>egg energy content</TD></TR>
+    <TR><TD>0.3</TD> <TD>0.5747</TD> <TD>0.9155</TD> <TD>GSI</TD> <TD>-</TD> <TD>gonado-somatic index</TD></TR>
+    <TR><TD>0.2</TD> <TD>0.1159</TD> <TD>0.4205</TD> <TD>Wwp</TD> <TD>g</TD> <TD>wet weight at puberty</TD></TR>
+    <TR><TD>1.6</TD> <TD>0.8394</TD> <TD>0.4754</TD> <TD>Wdi</TD> <TD>g</TD> <TD>ultimate dry weight</TD></TR>
+    <TR><TD colspan="2">see figure</TD> <TD>0.149</TD> <TD>tLh_19SA</TD> <TD colspan="2">time <font color="blue"><i>vs.</i></font> shell height Régnier-Brisson StAnne</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.3512</TD> <TD>tWd_19SA</TD> <TD colspan="2">time <font color="blue"><i>vs.</i></font> somatic afdw  Régnier-Brisson StAnne</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.4486</TD> <TD>LWd_19SA</TD> <TD colspan="2">shell height <font color="blue"><i>vs.</i></font> afdw w/out gonad Régnier-Brisson StAnne</TD>
+    <TR class="psd"><TD>0.02</TD> <TD>0.02558</TD> <TD>0.279</TD> <TD>psd.v</TD> <TD>cm/d</TD> <TD>energy conductance</TD></TR>
+    <TR class="psd"><TD>0.8</TD> <TD>0.9227</TD> <TD>0.1533</TD> <TD>psd.kap</TD> <TD>-</TD> <TD>allocation fraction to soma</TD></TR>
+    <TR class="psd"><TD>0.95</TD> <TD>0.95</TD> <TD>  0</TD> <TD>psd.kap_R</TD> <TD>-</TD> <TD>reproduction efficiency</TD></TR>
+    <TR class="psd"><TD> 18</TD> <TD>50.52</TD> <TD>1.807</TD> <TD>psd.p_M</TD> <TD>J/d.cm^3</TD> <TD>vol-spec som maint</TD></TR>
+    <TR class="psd"><TD>0.002</TD> <TD>0.002</TD> <TD>  0</TD> <TD>psd.k_J</TD> <TD>1/d</TD> <TD>maturity maint rate coefficient</TD></TR>
+    <TR class="psd"><TD>0.8</TD> <TD>0.978</TD> <TD>0.2225</TD> <TD>psd.kap_G</TD> <TD>-</TD> <TD>growth efficiency</TD></TR>
+  </TABLE>
+  </div>
+
+  <div class="par">
+  <h2>abj parameters at 20.0&deg;C</h2>
+  <TABLE id="par">
+    <TR class="head"><TH>symbol</TH> <TH>units</TH> <TH>value</TH>  <TH>free</TH> <TH>description</TH> </TR>
+    <TR><TD>T_ref</TD> <TD>K</TD> <TD>293.1</TD> <TD>0</TD> <TD>Reference temperature</TD></TR>
+    <TR><TD>del_M_A</TD> <TD>-</TD> <TD>0.28</TD> <TD>0</TD> <TD>shape coefficient Argopecten purpuratus</TD></TR>
+    <TR><TD>del_M_M</TD> <TD>-</TD> <TD>0.28</TD> <TD>0</TD> <TD>shape coefficient Mimachlamys varia</TD></TR>
+    <TR><TD>del_M_N</TD> <TD>-</TD> <TD>0.28</TD> <TD>0</TD> <TD>shape coefficient Nodpiecten subnodosus</TD></TR>
+    <TR><TD>del_M_P</TD> <TD>-</TD> <TD>0.28</TD> <TD>0</TD> <TD>shape coefficient Pecten maximus</TD></TR>
+    <TR><TD>del_M_Pl</TD> <TD>-</TD> <TD>0.28</TD> <TD>0</TD> <TD>shape coefficient Placopecten magellanicus</TD></TR>
+    <TR><TD>Li_species</TD> <TD>cm</TD> <TD>  7</TD> <TD>0</TD> <TD>ultimate shell height per species</TD></TR>
+    <TR><TD>z_ref</TD> <TD>-</TD> <TD>0.5841</TD> <TD>1</TD> <TD>zoom factor</TD></TR>
+    <TR><TD>z_species</TD> <TD>-</TD> <TD>0.3333</TD> <TD>0</TD> <TD>species zoom factor, ratio between ultimate sizes</TD></TR>
+    <TR><TD>z</TD> <TD>-</TD> <TD>0.183</TD> <TD>0</TD> <TD>initial zoom factor per species</TD></TR>
+    <TR><TD>F_m</TD> <TD>l/d.cm^2</TD> <TD>6.5</TD> <TD>0</TD> <TD>{F_m}, max spec searching rate</TD></TR>
+    <TR><TD>kap_X</TD> <TD>-</TD> <TD>0.8</TD> <TD>0</TD> <TD>digestion efficiency of food to reserve</TD></TR>
+    <TR><TD>kap_P</TD> <TD>-</TD> <TD>0.1</TD> <TD>0</TD> <TD>faecation efficiency of food to faeces</TD></TR>
+    <TR><TD>v</TD> <TD>cm/d</TD> <TD>0.02558</TD> <TD>1</TD> <TD>energy conductance</TD></TR>
+    <TR><TD>kap</TD> <TD>-</TD> <TD>0.9227</TD> <TD>1</TD> <TD>allocation fraction to soma</TD></TR>
+    <TR><TD>kap_R</TD> <TD>-</TD> <TD>0.95</TD> <TD>0</TD> <TD>reproduction efficiency</TD></TR>
+    <TR><TD>p_M</TD> <TD>J/d.cm^3</TD> <TD>50.52</TD> <TD>1</TD> <TD>[p_M], vol-spec somatic maint</TD></TR>
+    <TR><TD>p_T</TD> <TD>J/d.cm^2</TD> <TD>  0</TD> <TD>0</TD> <TD>{p_T}, surf-spec somatic maint</TD></TR>
+    <TR><TD>k_J</TD> <TD>1/d</TD> <TD>0.002</TD> <TD>0</TD> <TD>maturity maint rate coefficient</TD></TR>
+    <TR><TD>E_G</TD> <TD>J/cm^3</TD> <TD>4278</TD> <TD>1</TD> <TD>[E_G], spec cost for structure</TD></TR>
+    <TR><TD>E_Hb</TD> <TD>J</TD> <TD>0.0002831</TD> <TD>1</TD> <TD>maturity at birth</TD></TR>
+    <TR><TD>E_Hj</TD> <TD>J</TD> <TD>0.1857</TD> <TD>1</TD> <TD>maturity at metam</TD></TR>
+    <TR><TD>E_Hp_ref</TD> <TD>J</TD> <TD>1302</TD> <TD>1</TD> <TD>reference maturity at puberty for body size scaling</TD></TR>
+    <TR><TD>E_Hp</TD> <TD>J</TD> <TD>41.59</TD> <TD>0</TD> <TD>initial maturity at puberty with body size scaling</TD></TR>
+    <TR><TD>h_a</TD> <TD>1/d^2</TD> <TD>4.205e-09</TD> <TD>1</TD> <TD>Weibull aging acceleration</TD></TR>
+    <TR><TD>s_G</TD> <TD>-</TD> <TD>0.0001</TD> <TD>0</TD> <TD>Gompertz stress coefficient</TD></TR>
+    <TR><TD>T_A</TD> <TD>K</TD> <TD>8078</TD> <TD>0</TD> <TD>Arrhenius temperature</TD></TR>
+    <TR><TD>T_AH</TD> <TD>K</TD> <TD>4169</TD> <TD>0</TD> <TD>Arrhenius temperature above the upper boundary</TD></TR>
+    <TR><TD>T_AL</TD> <TD>K</TD> <TD>1.765e+05</TD> <TD>0</TD> <TD>Arrhenius temperature below the lower boundary</TD></TR>
+    <TR><TD>T_H</TD> <TD>K</TD> <TD>293.1</TD> <TD>0</TD> <TD>upper boundary tolerance range</TD></TR>
+    <TR><TD>T_L</TD> <TD>K</TD> <TD>275.1</TD> <TD>0</TD> <TD>lower boundary tolerance range</TD></TR>
+    <TR><TD>del_M_larv_A</TD> <TD>-</TD> <TD>0.5212</TD> <TD>0</TD> <TD>shape coefficient for larvae Argopecten purpuratus</TD></TR>
+    <TR><TD>del_M_larv_M</TD> <TD>-</TD> <TD>0.8296</TD> <TD>0</TD> <TD>shape coefficient for larvae Mimachlamys varia</TD></TR>
+    <TR><TD>del_M_larv_N</TD> <TD>-</TD> <TD>1.043</TD> <TD>0</TD> <TD>shape coefficient for larvae Nodipecten subnodosus</TD></TR>
+    <TR><TD>del_M_larv_P</TD> <TD>-</TD> <TD>1.07</TD> <TD>0</TD> <TD>shape coefficient for larvae Pecten maximus</TD></TR>
+    <TR><TD>del_M_larv_Pl</TD> <TD>-</TD> <TD>0.7942</TD> <TD>0</TD> <TD>shape coefficient for larvae Placopecten magellanicus</TD></TR>
+    <TR><TD>f</TD> <TD>-</TD> <TD>  1</TD> <TD>0</TD> <TD>scaled functional response for 0-var data</TD></TR>
+    <TR><TD>f_Paracas</TD> <TD>-</TD> <TD>1.158</TD> <TD>1</TD> <TD>sc func res Paracas Bay (A. purpuratus, Aguirre-Velarde et al., 2019)</TD></TR>
+    <TR><TD>f_tL19SA</TD> <TD>-</TD> <TD>1.198</TD> <TD>1</TD> <TD>sc func res Bay of Brest (M. varia, Régnier-Brisson et al. in prep)</TD></TR>
+    <TR><TD>f_AM</TD> <TD>-</TD> <TD>0.9033</TD> <TD>1</TD> <TD>sc func res laguna Ojo de liebre (N.subnodosus, Arellano-Martinez 2011)</TD></TR>
+    <TR><TD>f_CL</TD> <TD>-</TD> <TD>1.159</TD> <TD>1</TD> <TD>sc func res laguna Ojo de liebre and Bahia de Los Angeles (N. subnodosus, Carreno-Leon et al., 2023)</TD></TR>
+    <TR><TD>f_RA</TD> <TD>-</TD> <TD>0.6124</TD> <TD>1</TD> <TD>sc func res Bahia de Loreto (N. subnodosus, Ramirez-Arce 2009)</TD></TR>
+    <TR><TD>f_RC</TD> <TD>-</TD> <TD>0.7791</TD> <TD>1</TD> <TD>sc func res Bahia Magdalena (N. subnodosus, Racotta et al., 2003)</TD></TR>
+    <TR><TD>f_MA</TD> <TD>-</TD> <TD>0.59</TD> <TD>1</TD> <TD>sc func res Bahia Magdalena, high density (N. subnodosus, Maldonado-Amparo et al., 2004)</TD></TR>
+    <TR><TD>f_EV</TD> <TD>-</TD> <TD>1.045</TD> <TD>1</TD> <TD>sc func res Bay of Brest (P. maximus, EVECOS)</TD></TR>
+    <TR><TD>f_B</TD> <TD>-</TD> <TD>1.018</TD> <TD>1</TD> <TD>sc func res Bay of Brest (P. maximus, Lavaud 2014)</TD></TR>
+    <TR><TD>f_CB</TD> <TD>-</TD> <TD>0.9261</TD> <TD>1</TD> <TD>sc func res Baie des Chaleurs (P. magellanicus, Claereboudt et al., 1994)</TD></TR>
+    <TR><TD>f_MD10</TD> <TD>-</TD> <TD>1.141</TD> <TD>1</TD> <TD>sc func res Newfoundland, 10 m deep (P. magellanicus, Macdonald & Thompson 1988)</TD></TR>
+    <TR><TD>f_MD31</TD> <TD>-</TD> <TD>0.6463</TD> <TD>1</TD> <TD>sc func res Newfoundland, 31 m deep (P. magellanicus, Macdonald & Thompson 1988)</TD></TR>
+    <TR><TD>f_RO</TD> <TD>-</TD> <TD>0.8161</TD> <TD>1</TD> <TD>sc func res Gulf of Saint-Lawrence (P. magellanicus, Roddick et al., 1994)</TD></TR>
+  </TABLE>
+  </div>
+
+</BODY>
+</HTML>
