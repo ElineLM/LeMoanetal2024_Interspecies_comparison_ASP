@@ -20,6 +20,9 @@ All predict files for the 5 pectinid species.
 2. Mydata
 All mydata files for the 5 pectinid species.
 
+
+In each following folder, 3 files are present: run_group, pars_init_group and custom_results_group. The last one can be modified to represent the figures of univariate data as wanted. It automatically gets the data from the mydata file used for the estimation.
+
 3. Same_parameters_Placopecten
 Scripts for simulations with parameter set of Placopecten magellanicus and physical co-variation rules based on P. magellanicus as reference species. Simulations are done with same parameter values for all species except z which impacts p_Am and E_Hp.
 
@@ -28,3 +31,5 @@ From the previous parameter values for Placopecten magellanicus, estimation for 
 
 5. Different_parameters_Estimation
 From results of the 4th part, and the new set of parameters, multi-species estimation with increasing weight on v only, pM only and v and pM.
+
+
