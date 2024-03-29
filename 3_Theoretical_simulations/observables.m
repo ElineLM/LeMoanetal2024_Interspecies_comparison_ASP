@@ -1,0 +1,113 @@
+function obs = observables(simu)
+
+%------------------------------------------------------
+% Objectives: calculate the observable variables from parameters and state
+% variables 
+
+
+% Outputs: obs, with the values of observable variables
+%
+% calls:   simu, all information for each individual
+
+
+% called by:  main_multi.m  
+
+% 2024/02/06 - Eline Le Moan - based on codes from Laure Pecquerie
+% Mascoet Project
+%------------------------------------------------------
+par = simu.par;
+parC = simu.parC;
+parStat = simu.parStat;
+
+obs.time = simu.tEVHR(:,1);
+E = simu.tEVHR(:,2);
+V = simu.tEVHR(:,3);
+EH = simu.tEVHR(:,4);
+ER = simu.tEVHR(:,5);
+
+
+% shell height
+L = V.^(1/3) ./ par.del_M;                                                  % cm, shell height
+
+% wet weight
+W_w = (L * par.del_M).^3 + (E + ER) .* parC.w_E / par.mu_E;                 % g, somatic wet weight
+
+
+% dry weight
+W_s = par.d_V * (L * par.del_M).^3 + (E + ER) .* parC.w_E / par.mu_E;       % g, somatic dry weight
+
+
+% fecundity
+F = par.kap_R * ER / parStat.E_0;                                           % egg number
+index_F = find(F == 0);
+index_spawn = [];
+for i = 1:length(index_F)-1
+    if index_F(i+1) - index_F(i) ~= 1
+        temp = index_F(i)-1;
+        if F(temp) == 0
+            temp = index_F(i)-2;
+        end 
+        index_spawn = [index_spawn ;  temp];
+    end
+end
+spawning = F(index_spawn);
+N = simu.t_final/365 - 4; % retrieve the first 4 years of simulations to get only adults
+if isempty(spawning) == 0
+    mean_F = mean(spawning(end-N:end)); %get the last 4 values 
+else
+    mean_F = 0;
+end
+
+%respiration rates
+time = simu.tEVHR(:,1);
+for i = 1:length(time)
+    envi.X(i) = food(time(i), simu);
+    envi.T(i) = temperature(time(i), simu);
+    envi.f(i) =  envi.X(i) ./ (envi.X(i) + simu.X_K);
+    envi.cT(i) = exp((simu.par.T_A ./ envi.T(i))-(simu.par.T_A ./ simu.par.T_ref));
+end
+% parameter correction
+p_Am    = parC.p_Am * parStat.s_M * envi.cT * simu.z_species;
+v       = par.v * parStat.s_M * envi.cT;
+k_J     = par.k_J * envi.cT;
+p_M     = par.p_M * envi.cT;
+
+% assimilation flux
+p_A = p_Am' .* envi.f' .* V.^(2/3);
+% somatic maintenance flux
+p_S = par.p_M .* V;
+% mobilisation flux
+% p_C = (E./V) .* (par.E_G * v * V.^(2/3) + p_S) ./ (par.kap * (E./V) + par.E_G);
+p_C = (E./V) .* (par.E_G * v' .* V.^(2/3) + p_S) ./ (par.kap * (E./V) + par.E_G);
+% growth flux
+p_G = par.kap * p_C - p_S;
+% maturity maintenance flux
+p_J = k_J' .* EH;
+% reproduction flux
+p_R = (1 - par.kap) * p_C - p_J;
+% dissipation flux
+p_D = p_S + p_J + (1 - par.kap_R) * p_R;
+
+pADG = [p_A, p_D, p_G];         % fluxes matrix, in J/d
+JO = parC.eta_O * pADG';             % in mol/d
+JM = -parC.n_M\parC.n_O*JO;               % in mol/d
+EJO = - JM(3,:)' .* (simu.ctegaz * envi.T / simu.pressure)'*1000 /24; % conversion from mol/d to L/h by equation of gaz
+% EJO = (- JM(3,:)' .* 31.9988*1000*0.7) /24; % conversion from mol/d to L/h by equation of gaz
+% times 1000 because in m^3 and want in L
+EJO = EJO * 1000; % mL/h - to be comparable to data, times 1000 to get in mL instead of L
+
+obs.p_A = p_A;
+obs.p_S = p_S;
+obs.p_C = p_C;
+obs.p_G = p_G;
+obs.p_J = p_J;
+obs.p_R = p_R;
+obs.p_D = p_D;
+obs.L = L;
+obs.Ww = W_w;
+obs.Ws = W_s;
+obs.F = F;
+obs.spawning = spawning;
+obs.meanF = mean_F;
+obs.respi = EJO;
+end
