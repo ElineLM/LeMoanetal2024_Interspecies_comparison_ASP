@@ -6,6 +6,7 @@ I. Codes for the DEB parameter estimation realised for each individual species
 -----------------------------------------------------------------------------
 Folder: 1_Individual_species
 
+One folder per species to realise the individual parameter estimation. The last version realised, as the one kept in this study is the one presented in the files with results files as parameter values and figures.
 
 II. Codes for the multi-species DEB parameter estimation realised
 -----------------------------------------------------------------------------
@@ -32,4 +33,9 @@ From the previous parameter values for Placopecten magellanicus, estimation for 
 5. Different_parameters_Estimation
 From results of the 4th part, and the new set of parameters, multi-species estimation with increasing weight on v only, pM only and v and pM.
 
+III. Codes for DEB simulations with physical co-variation rules
+-----------------------------------------------------------------------------
+Folder: 3_Theoretical_simulations
 
+All the codes needed for theoretical simulations. To have the figures from the study, only the init file needs to be modify for the path given to the parameter file chosen.
+Only the main_multi, init and indiv files need to be modified to do simulations.
