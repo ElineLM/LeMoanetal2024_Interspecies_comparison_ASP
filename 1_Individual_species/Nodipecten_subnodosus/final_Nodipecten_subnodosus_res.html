@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <TITLE>Nodipecten_subnodosus</TITLE>
+  <style>
+    div.prd {
+      width: 50%;
+      float: left;
+    }
+
+    div.par {
+      width: 50%;
+      float: right;
+    }
+
+    p.clear {
+      clear: both;
+    }
+
+    .head {
+      background-color: #FFE7C6
+    }
+
+    .psd {
+      color: blue
+    }
+
+    #prd {
+      border-style: solid hidden solid hidden;
+    }
+
+    #par {
+      border-style: solid hidden solid hidden;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+  </style>
+</HEAD>
+
+<BODY>
+
+  <div class="prd">
+  <h1>Nodipecten subnodosus</h1>
+  </div>
+
+  <div class="par">
+  <h4>COMPLETE = 3.0; MRE =    0.158; SMAE =    0.173; SMSE =    0.029 </h4>
+  </div>
+
+  <p class="clear"></p>
+
+  <div class="prd">
+  <h2>Data & predictions</h2>
+  <TABLE id="prd">
+    <TR  class="head"><TH>data</TH> <TH>prd</TH> <TH>RE</TH>  <TH>symbol</TH> <TH>units</TH> <TH>description</TH> </TR>
+    <TR><TD>  1</TD> <TD>0.9739</TD> <TD>0.02608</TD> <TD>ab</TD> <TD>d</TD> <TD>age at birth</TD></TR>
+    <TR><TD> 14</TD> <TD>6.154</TD> <TD>0.5604</TD> <TD>tj</TD> <TD>d</TD> <TD>time since birth at metam</TD></TR>
+    <TR><TD>406</TD> <TD>368.9</TD> <TD>0.0914</TD> <TD>tp</TD> <TD>d</TD> <TD>time since birth at puberty</TD></TR>
+    <TR><TD>2555</TD> <TD>2184</TD> <TD>0.1452</TD> <TD>am</TD> <TD>d</TD> <TD>life span</TD></TR>
+    <TR><TD>0.006</TD> <TD>0.005388</TD> <TD>0.102</TD> <TD>Lb</TD> <TD>cm</TD> <TD>shell length at birth</TD></TR>
+    <TR><TD>0.021</TD> <TD>0.08676</TD> <TD>3.131</TD> <TD>Lj</TD> <TD>cm</TD> <TD>shell length at metam</TD></TR>
+    <TR><TD>6.6</TD> <TD>7.118</TD> <TD>0.07842</TD> <TD>Lp</TD> <TD>cm</TD> <TD>shell length at puberty</TD></TR>
+    <TR><TD> 19</TD> <TD>19.57</TD> <TD>0.03006</TD> <TD>Li</TD> <TD>cm</TD> <TD>ultimate shell length  </TD></TR>
+    <TR><TD>2.34e-08</TD> <TD>4.72e-08</TD> <TD>1.017</TD> <TD>Wdb</TD> <TD>g</TD> <TD>dry weight at birth</TD></TR>
+    <TR><TD>1.682e-07</TD> <TD>9.087e-06</TD> <TD>53.04</TD> <TD>Wdj</TD> <TD>g</TD> <TD>dry weight at metam</TD></TR>
+    <TR><TD>25.34</TD> <TD>25.09</TD> <TD>0.009908</TD> <TD>Wwp</TD> <TD>g</TD> <TD>Mass Wet weight at puberty</TD></TR>
+    <TR><TD>513.5</TD> <TD>521.6</TD> <TD>0.01577</TD> <TD>Wwi</TD> <TD>g</TD> <TD>ultimate wet total weight</TD></TR>
+    <TR><TD>1.685e+05</TD> <TD>1.692e+05</TD> <TD>0.00442</TD> <TD>R_L</TD> <TD>#/d</TD> <TD>reprod rate at a large size</TD></TR>
+    <TR><TD>0.00212</TD> <TD>0.001224</TD> <TD>0.4228</TD> <TD>E_0</TD> <TD>J</TD> <TD>egg energy content</TD></TR>
+    <TR><TD colspan="2">see figure</TD> <TD>0.1398</TD> <TD>tLh_RC</TD> <TD colspan="2">time since birth <font color="blue"><i>vs.</i></font> shell height Racotta 2003</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.1424</TD> <TD>tWw_RA</TD> <TD colspan="2">Age since fertilisation <font color="blue"><i>vs.</i></font> Flesh wet weight Ramirez-Arce 2009</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.1014</TD> <TD>tLh_RA</TD> <TD colspan="2">Age since fertilisation <font color="blue"><i>vs.</i></font> Shell height Ramirez-Arce 2009</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.08328</TD> <TD>tLh_AM</TD> <TD colspan="2">age (N. subnodosus) <font color="blue"><i>vs.</i></font> shell height, Arellano-Martinez</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.2361</TD> <TD>CL_LWd</TD> <TD colspan="2">shell height <font color="blue"><i>vs.</i></font> dry weight, Carreno-Leon</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.1261</TD> <TD>tLl_MA</TD> <TD colspan="2">age (N. subnodosus) <font color="blue"><i>vs.</i></font> shell height, Maldonado-Amparo</TD>
+    <TR class="psd"><TD>0.02</TD> <TD>0.01479</TD> <TD>0.2606</TD> <TD>psd.v</TD> <TD>cm/d</TD> <TD>energy conductance</TD></TR>
+    <TR class="psd"><TD>0.8</TD> <TD>0.9857</TD> <TD>0.2321</TD> <TD>psd.kap</TD> <TD>-</TD> <TD>allocation fraction to soma</TD></TR>
+    <TR class="psd"><TD>0.95</TD> <TD>0.95</TD> <TD>  0</TD> <TD>psd.kap_R</TD> <TD>-</TD> <TD>reproduction efficiency</TD></TR>
+    <TR class="psd"><TD> 18</TD> <TD>19.32</TD> <TD>0.07332</TD> <TD>psd.p_M</TD> <TD>J/d.cm^3</TD> <TD>vol-spec som maint</TD></TR>
+    <TR class="psd"><TD>0.002</TD> <TD>0.002</TD> <TD>  0</TD> <TD>psd.k_J</TD> <TD>1/d</TD> <TD>maturity maint rate coefficient</TD></TR>
+    <TR class="psd"><TD>0.8</TD> <TD>0.7882</TD> <TD>0.0147</TD> <TD>psd.kap_G</TD> <TD>-</TD> <TD>growth efficiency</TD></TR>
+  </TABLE>
+  </div>
+
+  <div class="par">
+  <h2>abj parameters at 20.0&deg;C</h2>
+  <TABLE id="par">
+    <TR class="head"><TH>symbol</TH> <TH>units</TH> <TH>value</TH>  <TH>free</TH> <TH>description</TH> </TR>
+    <TR><TD>T_ref</TD> <TD>K</TD> <TD>293.1</TD> <TD>0</TD> <TD>Reference temperature</TD></TR>
+    <TR><TD>T_A</TD> <TD>K</TD> <TD>6577</TD> <TD>0</TD> <TD>Arrhenius temperature</TD></TR>
+    <TR><TD>z</TD> <TD>-</TD> <TD>1.258</TD> <TD>1</TD> <TD>zoom factor</TD></TR>
+    <TR><TD>F_m</TD> <TD>l/d.cm^2</TD> <TD> 12</TD> <TD>0</TD> <TD>{F_m}, max spec searching rate</TD></TR>
+    <TR><TD>kap_X</TD> <TD>-</TD> <TD>0.8</TD> <TD>0</TD> <TD>digestion efficiency of food to reserve</TD></TR>
+    <TR><TD>kap_P</TD> <TD>-</TD> <TD>0.1</TD> <TD>0</TD> <TD>faecation efficiency of food to faeces</TD></TR>
+    <TR><TD>v</TD> <TD>cm/d</TD> <TD>0.01479</TD> <TD>1</TD> <TD>energy conductance</TD></TR>
+    <TR><TD>kap</TD> <TD>-</TD> <TD>0.9857</TD> <TD>1</TD> <TD>allocation fraction to soma</TD></TR>
+    <TR><TD>kap_R</TD> <TD>-</TD> <TD>0.95</TD> <TD>0</TD> <TD>reproduction efficiency</TD></TR>
+    <TR><TD>p_M</TD> <TD>J/d.cm^3</TD> <TD>19.32</TD> <TD>1</TD> <TD>[p_M], vol-spec somatic maint</TD></TR>
+    <TR><TD>p_T</TD> <TD>J/d.cm^2</TD> <TD>  0</TD> <TD>0</TD> <TD>{p_T}, surf-spec somatic maint</TD></TR>
+    <TR><TD>k_J</TD> <TD>1/d</TD> <TD>0.002</TD> <TD>0</TD> <TD>maturity maint rate coefficient</TD></TR>
+    <TR><TD>E_G</TD> <TD>J/cm^3</TD> <TD>5308</TD> <TD>1</TD> <TD>[E_G], spec cost for structure</TD></TR>
+    <TR><TD>E_Hb</TD> <TD>J</TD> <TD>1.334e-05</TD> <TD>1</TD> <TD>maturity at birth</TD></TR>
+    <TR><TD>E_Hj</TD> <TD>J</TD> <TD>0.002572</TD> <TD>1</TD> <TD>maturity at metam</TD></TR>
+    <TR><TD>E_Hp</TD> <TD>J</TD> <TD>1681</TD> <TD>1</TD> <TD>maturity at puberty</TD></TR>
+    <TR><TD>h_a</TD> <TD>1/d^2</TD> <TD>1.762e-08</TD> <TD>0</TD> <TD>Weibull aging acceleration</TD></TR>
+    <TR><TD>s_G</TD> <TD>-</TD> <TD>0.0001</TD> <TD>0</TD> <TD>Gompertz stress coefficient</TD></TR>
+    <TR><TD>del_M_N</TD> <TD>-</TD> <TD>0.371</TD> <TD>1</TD> <TD>shape coefficient</TD></TR>
+    <TR><TD>del_M_larv_N</TD> <TD>-</TD> <TD>1.035</TD> <TD>0</TD> <TD>shape coefficient for larvae</TD></TR>
+    <TR><TD>f</TD> <TD>-</TD> <TD>  1</TD> <TD>0</TD> <TD>scaled functional response for 0-var data</TD></TR>
+    <TR><TD>f_AM</TD> <TD>-</TD> <TD>1.2</TD> <TD>1</TD> <TD>sc func res laguna Ojo de liebre (Arellano-Martinez 2011)</TD></TR>
+    <TR><TD>f_CL</TD> <TD>-</TD> <TD>0.4869</TD> <TD>1</TD> <TD>sc func res laguna Ojo de liebre and Bahia de Los Angeles (Carreno-Leon et al., 2023)</TD></TR>
+    <TR><TD>f_RA</TD> <TD>-</TD> <TD>0.7372</TD> <TD>1</TD> <TD>sc func res Bahia de Loreto (Ramirez-Arce 2009)</TD></TR>
+    <TR><TD>f_RC</TD> <TD>-</TD> <TD>1.2</TD> <TD>1</TD> <TD>sc func res  (Racotta et al., 2003)</TD></TR>
+    <TR><TD>f_MA</TD> <TD>-</TD> <TD>0.9811</TD> <TD>1</TD> <TD>sc func res  (Maldonado-Amparo et al., 2004)</TD></TR>
+  </TABLE>
+  </div>
+
+</BODY>
+</HTML>

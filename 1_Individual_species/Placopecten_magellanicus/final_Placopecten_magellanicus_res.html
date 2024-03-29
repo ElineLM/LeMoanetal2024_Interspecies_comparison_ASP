@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <TITLE>Placopecten_magellanicus</TITLE>
+  <style>
+    div.prd {
+      width: 50%;
+      float: left;
+    }
+
+    div.par {
+      width: 50%;
+      float: right;
+    }
+
+    p.clear {
+      clear: both;
+    }
+
+    .head {
+      background-color: #FFE7C6
+    }
+
+    .psd {
+      color: blue
+    }
+
+    #prd {
+      border-style: solid hidden solid hidden;
+    }
+
+    #par {
+      border-style: solid hidden solid hidden;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+  </style>
+</HEAD>
+
+<BODY>
+
+  <div class="prd">
+  <h1>Placopecten magellanicus</h1>
+  </div>
+
+  <div class="par">
+  <h4>COMPLETE = 3.6; MRE =    0.111; SMAE =    0.112; SMSE =    0.024 </h4>
+  </div>
+
+  <p class="clear"></p>
+
+  <div class="prd">
+  <h2>Data & predictions</h2>
+  <TABLE id="prd">
+    <TR  class="head"><TH>data</TH> <TH>prd</TH> <TH>RE</TH>  <TH>symbol</TH> <TH>units</TH> <TH>description</TH> </TR>
+    <TR><TD>  4</TD> <TD>3.896</TD> <TD>0.02597</TD> <TD>ab</TD> <TD>d</TD> <TD>age at birth</TD></TR>
+    <TR><TD> 35</TD> <TD>39.05</TD> <TD>0.1157</TD> <TD>aj</TD> <TD>d</TD> <TD>age at metamorphosis</TD></TR>
+    <TR><TD>365</TD> <TD>345.2</TD> <TD>0.05426</TD> <TD>ap</TD> <TD>d</TD> <TD>age at puberty</TD></TR>
+    <TR><TD>7300</TD> <TD>7328</TD> <TD>0.003888</TD> <TD>am</TD> <TD>d</TD> <TD>life span</TD></TR>
+    <TR><TD>0.0105</TD> <TD>0.0105</TD> <TD>0.0004209</TD> <TD>Lb</TD> <TD>cm</TD> <TD>shell length at birth</TD></TR>
+    <TR><TD>0.035</TD> <TD>0.1105</TD> <TD>2.158</TD> <TD>Lj</TD> <TD>cm</TD> <TD>shell length at metamorphosis</TD></TR>
+    <TR><TD>2.5</TD> <TD>3.992</TD> <TD>0.597</TD> <TD>Lp</TD> <TD>cm</TD> <TD>shell length at puberty</TD></TR>
+    <TR><TD> 23</TD> <TD>20.67</TD> <TD>0.1012</TD> <TD>Li</TD> <TD>cm</TD> <TD>ultimate shell length</TD></TR>
+    <TR><TD>1.5e-07</TD> <TD>1.473e-07</TD> <TD>0.01808</TD> <TD>Wdb</TD> <TD>g</TD> <TD>dry tissue weight at birth</TD></TR>
+    <TR><TD>1e-06</TD> <TD>0.0001716</TD> <TD>170.6</TD> <TD>Wdj</TD> <TD>g</TD> <TD>dry tissue weight at metamorphosis</TD></TR>
+    <TR><TD>0.5</TD> <TD>0.4422</TD> <TD>0.1157</TD> <TD>Wdp</TD> <TD>g</TD> <TD>dry tissue weight at puberty</TD></TR>
+    <TR><TD> 50</TD> <TD>61.37</TD> <TD>0.2274</TD> <TD>Wdi</TD> <TD>g</TD> <TD>ultimate dry tissue weight</TD></TR>
+    <TR><TD>1.836e+05</TD> <TD>1.798e+05</TD> <TD>0.02037</TD> <TD>R_L</TD> <TD>#/d</TD> <TD>reprod rate at a given size</TD></TR>
+    <TR><TD colspan="2">see figure</TD> <TD>0.02827</TD> <TD>tL1</TD> <TD colspan="2">time since birth <font color="blue"><i>vs.</i></font> shell length</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.1328</TD> <TD>tL2</TD> <TD colspan="2">time since birth <font color="blue"><i>vs.</i></font> shell height</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.05896</TD> <TD>tL3</TD> <TD colspan="2">time since birth <font color="blue"><i>vs.</i></font> shell height</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.2104</TD> <TD>LWd</TD> <TD colspan="2">shell height <font color="blue"><i>vs.</i></font> tissue dry weight</TD>
+    <TR class="psd"><TD>0.02</TD> <TD>0.01621</TD> <TD>0.1893</TD> <TD>psd.v</TD> <TD>cm/d</TD> <TD>energy conductance</TD></TR>
+    <TR class="psd"><TD>0.8</TD> <TD>0.9152</TD> <TD>0.144</TD> <TD>psd.kap</TD> <TD>-</TD> <TD>allocation fraction to soma</TD></TR>
+    <TR class="psd"><TD>0.95</TD> <TD>0.95</TD> <TD>  0</TD> <TD>psd.kap_R</TD> <TD>-</TD> <TD>reproduction efficiency</TD></TR>
+    <TR class="psd"><TD> 18</TD> <TD>30.97</TD> <TD>0.7204</TD> <TD>psd.p_M</TD> <TD>J/d.cm^3</TD> <TD>vol-spec som maint</TD></TR>
+    <TR class="psd"><TD>0.002</TD> <TD>0.002</TD> <TD>  0</TD> <TD>psd.k_J</TD> <TD>1/d</TD> <TD>maturity maint rate coefficient</TD></TR>
+    <TR class="psd"><TD>0.8</TD> <TD>0.8043</TD> <TD>0.005392</TD> <TD>psd.kap_G</TD> <TD>-</TD> <TD>growth efficiency</TD></TR>
+  </TABLE>
+  </div>
+
+  <div class="par">
+  <h2>abj parameters at 20.0&deg;C</h2>
+  <TABLE id="par">
+    <TR class="head"><TH>symbol</TH> <TH>units</TH> <TH>value</TH>  <TH>free</TH> <TH>description</TH> </TR>
+    <TR><TD>T_ref</TD> <TD>K</TD> <TD>293.1</TD> <TD>0</TD> <TD>Reference temperature</TD></TR>
+    <TR><TD>T_A</TD> <TD>K</TD> <TD>9000</TD> <TD>0</TD> <TD>Arrhenius temperature</TD></TR>
+    <TR><TD>z</TD> <TD>-</TD> <TD>0.5921</TD> <TD>1</TD> <TD>zoom factor</TD></TR>
+    <TR><TD>F_m</TD> <TD>l/d.cm^2</TD> <TD>6.5</TD> <TD>0</TD> <TD>{F_m}, max spec searching rate</TD></TR>
+    <TR><TD>kap_X</TD> <TD>-</TD> <TD>0.8</TD> <TD>0</TD> <TD>digestion efficiency of food to reserve</TD></TR>
+    <TR><TD>kap_P</TD> <TD>-</TD> <TD>0.1</TD> <TD>0</TD> <TD>faecation efficiency of food to faeces</TD></TR>
+    <TR><TD>v</TD> <TD>cm/d</TD> <TD>0.01621</TD> <TD>1</TD> <TD>energy conductance</TD></TR>
+    <TR><TD>kap</TD> <TD>-</TD> <TD>0.9152</TD> <TD>1</TD> <TD>allocation fraction to soma</TD></TR>
+    <TR><TD>kap_R</TD> <TD>-</TD> <TD>0.95</TD> <TD>0</TD> <TD>reproduction efficiency</TD></TR>
+    <TR><TD>p_M</TD> <TD>J/d.cm^3</TD> <TD>30.97</TD> <TD>1</TD> <TD>[p_M], vol-spec somatic maint</TD></TR>
+    <TR><TD>p_T</TD> <TD>J/d.cm^2</TD> <TD>  0</TD> <TD>0</TD> <TD>{p_T}, surf-spec somatic maint</TD></TR>
+    <TR><TD>k_J</TD> <TD>1/d</TD> <TD>0.002</TD> <TD>0</TD> <TD>maturity maint rate coefficient</TD></TR>
+    <TR><TD>E_G</TD> <TD>J/cm^3</TD> <TD>5202</TD> <TD>1</TD> <TD>[E_G], spec cost for structure</TD></TR>
+    <TR><TD>E_Hb</TD> <TD>J</TD> <TD>0.000281</TD> <TD>1</TD> <TD>maturity at birth</TD></TR>
+    <TR><TD>E_Hj</TD> <TD>J</TD> <TD>0.33</TD> <TD>1</TD> <TD>maturity at metamorphosis</TD></TR>
+    <TR><TD>E_Hp</TD> <TD>J</TD> <TD>950.9</TD> <TD>1</TD> <TD>maturity at puberty</TD></TR>
+    <TR><TD>h_a</TD> <TD>1/d^2</TD> <TD>5.24e-09</TD> <TD>1</TD> <TD>Weibull aging acceleration</TD></TR>
+    <TR><TD>s_G</TD> <TD>-</TD> <TD>0.0001</TD> <TD>0</TD> <TD>Gompertz stress coefficient</TD></TR>
+    <TR><TD>T_AH</TD> <TD>K</TD> <TD>4169</TD> <TD>0</TD> <TD>Arrhenius temperature above the upper boundary</TD></TR>
+    <TR><TD>T_AL</TD> <TD>K</TD> <TD>1.765e+05</TD> <TD>0</TD> <TD>Arrhenius temperature below the lower boundary</TD></TR>
+    <TR><TD>T_H</TD> <TD>K</TD> <TD>293.1</TD> <TD>0</TD> <TD>upper boundary tolerance range</TD></TR>
+    <TR><TD>T_L</TD> <TD>K</TD> <TD>275.1</TD> <TD>0</TD> <TD>lower boundary tolerance range</TD></TR>
+    <TR><TD>del_M_Pl</TD> <TD>-</TD> <TD>0.3014</TD> <TD>1</TD> <TD>shape coefficient</TD></TR>
+    <TR><TD>del_Mb</TD> <TD>-</TD> <TD>0.7942</TD> <TD>1</TD> <TD>shape coefficient before metamorphosis</TD></TR>
+    <TR><TD>f</TD> <TD>-</TD> <TD>  1</TD> <TD>0</TD> <TD>scaled functional response for 0-var data</TD></TR>
+    <TR><TD>f_LWd</TD> <TD>-</TD> <TD>1.2</TD> <TD>1</TD> <TD>scaled functional response for LWd data</TD></TR>
+    <TR><TD>f_tL1</TD> <TD>-</TD> <TD>1.191</TD> <TD>1</TD> <TD>scaled functional response for tL data at 10 m deep in Newfoundland</TD></TR>
+    <TR><TD>f_tL2</TD> <TD>-</TD> <TD>1.2</TD> <TD>1</TD> <TD>scaled functional response for tL data at 31 m deep in Newfoundland</TD></TR>
+    <TR><TD>f_tL3</TD> <TD>-</TD> <TD>0.768</TD> <TD>1</TD> <TD>scaled functional response for tL data in the Gulf of Saint-Lawrence</TD></TR>
+  </TABLE>
+  </div>
+
+</BODY>
+</HTML>
