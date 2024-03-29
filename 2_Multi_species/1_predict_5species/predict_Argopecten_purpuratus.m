@@ -133,7 +133,7 @@ function [prdData, info] = predict_Argopecten_purpuratus(par, data, auxData)
     [t_sort_tWsC3, ~ , it_sort_tWsC3] = unique(tWd_C3(:,1),'sorted'); 
     [~, VE] =  ode45(@dget_VE_hypo, t_sort_tWsC3, VE0,[], f, tT, S_O2, par, cPar, s_M, S_O2c);
     
-    W_s = d_V * (((VE(:,1).^(1/3))).^3 + VE(:,2) .* w_E / mu_E / d_E);            % g, somatic dry weight
+    W_s = d_V * VE(:,1) + VE(:,2) .* w_E / mu_E / d_E;            % g, somatic dry weight
     EWC3 = W_s(it_sort_tWsC3);                                               % reconstruction, somatic dry weight for data time
       
     

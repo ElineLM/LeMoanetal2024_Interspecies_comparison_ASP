@@ -161,7 +161,7 @@ end
   % to consider time of weight data set for custom plots
   [t_sort_19SA, it , it_sort_19SA] = unique(tWd_19SA(:,1),'sorted');
   [~, VE] =  ode45(@dget_VE, t_sort_19SA, VE0,[], f, tT, par, cPar, s_M);
-  W_s = d_V * ((VE(:,1).^(1/3)).^3 + VE(:,2) .* w_E / mu_E / d_E);                 % g, somatic dry weight
+  W_s = d_V * (VE(:,1).^(1/3)).^3 + VE(:,2) .* w_E / mu_E / d_E;                 % g, somatic dry weight
   EtWd_19SA = W_s(it_sort_19SA);                                                   % g dw, reconstruction, somatic dry weight for data time
 
   %length-weight estimation /!\ E_R not considered

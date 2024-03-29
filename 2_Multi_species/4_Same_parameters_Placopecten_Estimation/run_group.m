@@ -36,7 +36,7 @@ for i = 1:length(results_file)
     copyfile(results_file{i},[saveDir, trialname, results_file{i}])
 end
 
-
+return
 %% Run 2
 estim_options('pars_init_method', 1);
 estim_pars; 
@@ -60,7 +60,7 @@ mkdir(saveDir);
 for i = 1:length(results_file)
     copyfile(results_file{i},[saveDir, trialname, results_file{i}])
 end
-
+return 
 %% Run 3
 estim_options('pars_init_method', 1);
 estim_pars; 

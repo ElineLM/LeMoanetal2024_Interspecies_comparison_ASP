@@ -100,10 +100,10 @@ function custom_results_group(parGrp, metaPar, data, txtData, auxData)
                   plot(tLi(:,1), tLi(:,2), '.', 'color', colors{i}, 'Markersize', 15);
                   hold on
                   plot(tp, tLp, '--', 'color', colors{i}, 'linewidth', 2);
-                  xlabel([txtData.(pets{i}).label.(names_fields{j}){1}, ', ', txtData.(pets{i}).units.(names_fields{j}){1}]);
-                  ylabel([txtData.(pets{i}).label.(names_fields{j}){2}, ', ', txtData.(pets{i}).units.(names_fields{j}){2}]);
-%                   xlabel("Age (day)");
-%                   ylabel("Shell height (cm)"); 
+%                   xlabel([txtData.(pets{i}).label.(names_fields{j}){1}, ', ', txtData.(pets{i}).units.(names_fields{j}){1}]);
+%                   ylabel([txtData.(pets{i}).label.(names_fields{j}){2}, ', ', txtData.(pets{i}).units.(names_fields{j}){2}]);
+                  xlabel("Age (day)");
+                  ylabel("Shell height (cm)"); 
                   set(gca,'Fontsize',18, 'Box', 'on')
                   print(['results_', pets{i}, '_', names_fields{j}], '-dpng')
                end
@@ -127,10 +127,10 @@ function custom_results_group(parGrp, metaPar, data, txtData, auxData)
               plot(tWi(:,1), tWi(:,2), '.', 'color', colors{i}, 'Markersize', 15);
               hold on
               plot(tp, tWp, '--', 'color', colors{i}, 'linewidth', 2);
-              xlabel([txtData.(pets{i}).label.(names_fields{j}){1}, ', ', txtData.(pets{i}).units.(names_fields{j}){1}]);
-              ylabel([txtData.(pets{i}).label.(names_fields{j}){2}, ', ', txtData.(pets{i}).units.(names_fields{j}){2}]);  
-%               xlabel("Age (day)");
-%               ylabel("Tissue weight (g)"); 
+%               xlabel([txtData.(pets{i}).label.(names_fields{j}){1}, ', ', txtData.(pets{i}).units.(names_fields{j}){1}]);
+%               ylabel([txtData.(pets{i}).label.(names_fields{j}){2}, ', ', txtData.(pets{i}).units.(names_fields{j}){2}]);  
+              xlabel("Age (day)");
+              ylabel("Tissue weight (g)"); 
               set(gca,'Fontsize',18, 'Box', 'on')
               print(['results_', pets{i}, '_', names_fields{j}], '-dpng')
               
@@ -152,10 +152,10 @@ function custom_results_group(parGrp, metaPar, data, txtData, auxData)
               plot(LWi(:,1), LWi(:,2), '.', 'color', colors{i}, 'Markersize', 15);
               hold on
               plot(Lg, LWp, '--', 'color', colors{i}, 'linewidth', 2);
-              xlabel([txtData.(pets{i}).label.(names_fields{j}){1}, ', ', txtData.(pets{i}).units.(names_fields{j}){1}]);
-              ylabel([txtData.(pets{i}).label.(names_fields{j}){2}, ', ', txtData.(pets{i}).units.(names_fields{j}){2}]); 
-%               xlabel("Shell height (cm)");
-%               ylabel("Tissue weight (g)"); 
+%               xlabel([txtData.(pets{i}).label.(names_fields{j}){1}, ', ', txtData.(pets{i}).units.(names_fields{j}){1}]);
+%               ylabel([txtData.(pets{i}).label.(names_fields{j}){2}, ', ', txtData.(pets{i}).units.(names_fields{j}){2}]); 
+              xlabel("Shell height (cm)");
+              ylabel("Tissue weight (g)"); 
               set(gca,'Fontsize',18, 'Box', 'on')
               print(['results_', pets{i}, '_', names_fields{j}], '-dpng')
           end   

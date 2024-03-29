@@ -28,11 +28,12 @@ results_file = {figures.name,...
     results.name,...
     };
 timeStamp = char(datetime('today'));            % get the date
-saveDir   = ['results_', timeStamp, '/'];       % create the name of the folder with results and the date
-trialname = 'trial_';  % Here change the name of the trial
-mkdir(saveDir);
+%saveDir   = ['results_', timeStamp, '/'];       % create the name of the folder with results and the date
+trialname = 'Simulation_PlacopectenParam_f1_groupedFigures_';  % Here change the name of the trial
+%mkdir(saveDir);
 
 
 for i = 1:length(results_file)
-    copyfile(results_file{i},[saveDir, trialname, results_file{i}])
+%     copyfile(results_file{i},[saveDir, trialname, results_file{i}])
+    copyfile(results_file{i},[trialname, results_file{i}])
 end

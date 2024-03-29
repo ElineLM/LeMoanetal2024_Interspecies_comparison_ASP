@@ -14,7 +14,7 @@ estim_options('results_output',3);
 estim_options('method', 'nm');
 
 estim_pars; 
-
+return
 %% continue the estimation
 % 
 estim_options('pars_init_method', 1);
